@@ -1,0 +1,59 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+<!---body {margin:0 auto;overflow:hidden;}--->
+.audio{
+	width:45px;
+	position:fixed;top:65px;left:94%;
+	z-index:100;
+	filter:alpha(opacity=30);
+    -moz-opacity:0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+}
+
+.header	.topcn{
+	width: 980px;
+	top:8%;
+	left: 50%;
+	margin-left: -490px;
+	position:absolute;
+	z-index:20;
+}
+.header	.topcn p{
+	font-family: 'KaiTi';
+	font-size:20px ;
+	color:#B2DFEE;
+	text-align:center;
+	letter-spacing: 5px;
+	line-height: 40px;
+	transform: translateY(50px);
+	opacity:0;
+}
+@-webkit-keyframes slider {
+	0% {transform: translateY(50px);opacity:0;}
+	100% {transform: translateY(0);opacity:1;}
+}
+@-moz-keyframes slider {
+	0% {transform: translateY(50px);opacity:0;}
+	100% {transform: translateY(0);opacity:1;}
+}
+@-ms-keyframes slider {
+	0% {transform: translateY(50px);opacity:0;}
+	100% {transform: translateY(0);opacity:1;}
+}
+@-o-keyframes slider {
+	0% {transform: translateY(50px);opacity:0;}
+	100% {transform: translateY(0);opacity:1;}
+}
+@keyframes slider{
+	0% {transform: translateY(50px);opacity:0;}
+	100% {transform: translateY(0);opacity:1;}
+}
+
+.show{
+	animation: slider 2s ease-in both;
+}
